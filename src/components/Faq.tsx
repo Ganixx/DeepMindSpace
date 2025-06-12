@@ -34,8 +34,8 @@ function Faq() {
 
   return (
     <>
-      <h1 className="text-center text-4xl my-10 mx-auto font-bold">Frequently Asked Questions</h1>
-      <section className="w-full max-w-2xl mx-auto  bg-gray-100 rounded-2xl shadow-md my-10">
+      <h1 className="text-center text-3xl md:text-4xl my-10 mx-auto font-bold">Frequently Asked Questions</h1>
+      <section className="w-full max-w-2xl mx-auto bg-gray-100 rounded-2xl shadow-md my-10">
         {faqs.map((faq, idx) => {
           const isActive = active === faq.id;
           return (
@@ -51,11 +51,15 @@ function Faq() {
             >
               <button
                 className={`
-                  w-full flex justify-between items-center px-15 py-5  text-lg font-medium
+                  w-full flex justify-between items-center px-4 md:px-8 py-5 text-base md:text-lg font-medium
                   transition-colors
                   ${isActive ? "text-white" : "text-gray-900"}
-                  focus:outline-none
+                  focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500
+                  cursor-pointer
                 `}
+                aria-expanded={isActive}
+                aria-controls={`answer-${faq.id}`}
+                id={`faq-${faq.id}`}
                 onClick={() => setActive(isActive ? "" : faq.id)}
               >
                 <span>{faq.question}</span>
@@ -65,13 +69,16 @@ function Faq() {
                     ${isActive ? "rotate-180 text-white" : "text-teal-800"}
                   `}
                   size={24}
+                  aria-hidden="true"
                 />
               </button>
               <div
                 id={`answer-${faq.id}`}
+                role="region"
+                aria-labelledby={`faq-${faq.id}`}
                 className={`
                   overflow-hidden transition-[max-height,padding] duration-200 ease-in-out
-                  ${isActive ? "max-h-40 py-3 px-15" : "max-h-0 py-0 px-6"}
+                  ${isActive ? "max-h-40 py-3 px-4 md:px-8" : "max-h-0 py-0 px-4 md:px-8"}
                 `}
                 style={{
                   transitionProperty: "max-height, padding",

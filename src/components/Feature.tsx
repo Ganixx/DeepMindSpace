@@ -2,7 +2,7 @@ export default function Feature() {
   return (
     <main className='bg-gray-100'>
       <img src='/images/Wavy.png' alt="Decorative wavy background" className='w-full' />
-      <div className='flex justify-center items-center h-12 mb-4'>
+      <div className='flex justify-center items-center h-12 mb-4 mt-2 '>
         <h1 className='text-3xl md:text-5xl font-semibold text-black border-b border-black/40 pb-1 text-center'>
           From Uncertainty to Clarity
         </h1>
