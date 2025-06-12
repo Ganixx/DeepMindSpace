@@ -15,7 +15,7 @@ function Dashboard() {
             your needs.
           </p>
           <div>
-            <button className='font-bold px-6 py-3 border-3 border-emerald-500 w-auto rounded-lg'>
+            <button className='font-bold px-6 py-3 border-3 border-teal-500 w-auto rounded-lg'>
               Get Started
             </button>
           </div>
@@ -31,7 +31,7 @@ function Dashboard() {
           <p className='font-medium'>24/7 Access to Ai Conversation Support for emotional support, guidance, and mental health resources</p>
         </div>
 
-        <div className='w-1/4 h-[30dvh] bg-emerald-200  rounded-3xl px-6 py-3 flex flex-col justify-evenly'>
+        <div className='w-1/4 h-[30dvh] bg-teal-200  rounded-3xl px-6 py-3 flex flex-col justify-evenly'>
           <h1 className='text-2xl font-bold'>MentAI, connect me to a therapist</h1>
           <p className='font-medium'>24/7 Access to Ai Conversation Support for emotional support, guidance, and mental health resources</p>
         </div>

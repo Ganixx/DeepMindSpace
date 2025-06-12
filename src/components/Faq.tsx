@@ -44,7 +44,7 @@ function Faq() {
               className={`
                 border-b last:border-b-0 border-gray-200
                 transition-colors
-                ${isActive ? "bg-emerald-500 text-white" : "bg-gray-100"}
+                ${isActive ? "bg-teal-800 text-white" : "bg-gray-100"}
                 ${idx === 0 ? "rounded-t-2xl" : ""}
                 ${idx === faqs.length - 1 ? "rounded-b-2xl" : ""}
               `}
@@ -62,7 +62,7 @@ function Faq() {
                 <ChevronDown
                   className={`
                     transition-transform duration-300
-                    ${isActive ? "rotate-180 text-white" : "text-emerald-700"}
+                    ${isActive ? "rotate-180 text-white" : "text-teal-800"}
                   `}
                   size={24}
                 />
