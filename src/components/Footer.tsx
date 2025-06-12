@@ -40,7 +40,7 @@ export default function Footer() {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 40"
           preserveAspectRatio="none"
-          className="absolute left-0 -top-60 h-full w-full z-10"
+          className="absolute  -top-60 h-full w-full z-10"
         >
           <path
             d="M 0 34 Q 13 18 58 22 C 99 31 98 32 138 8 L 139 39 L 0 40 Z"

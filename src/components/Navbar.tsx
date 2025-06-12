@@ -30,8 +30,8 @@ function Navbar() {
                 <ChevronDown className="w-4 h-4 text-gray-600" />
               </a>
               {/* Example dropdown, can be expanded */}
-              <ul className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 
-              group-focus-within:opacity-100 pointer-events-none 
+              <ul className="absolute left-0 mt-2 w-auto bg-white shadow-lg rounded-md  opacity-0 group-hover:opacity-100 
+              group-focus-within:opacity-100 pointer-events-none  
               group-hover:pointer-events-auto group-focus-within:pointer-events-auto transition-opacity z-10">
                 <li><a href="#resource1" className="block px-4 py-2 hover:bg-teal-100">Resource 1</a></li>
                 <li><a href="#resource2" className="block px-4 py-2 hover:bg-teal-100">Resource 2</a></li>
